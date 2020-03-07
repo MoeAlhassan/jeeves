@@ -1,1 +1,9 @@
-{}
+{
+	"auth": {
+		"01logina5c01a12": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}
