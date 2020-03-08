@@ -10,10 +10,10 @@ import {
 const SearchBar = () => {
 
 return (
-    <div>
+    <div className="col-lg-7 buttonSize">
     <InputGroup>
-        <Input />
-        <InputGroupAddon addonType="append"><Button>Search</Button></InputGroupAddon>
+        <Input placeholder="Search for your next place, try: 3 bed in East End with a yard" />
+        <InputGroupAddon addonType="append"><Button className="searchButton">Search</Button></InputGroupAddon>
     </InputGroup>
     </div>
     );
