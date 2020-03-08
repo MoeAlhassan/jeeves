@@ -41,11 +41,41 @@ const NavBar = () => {
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
+                  to="/LandlordServices"
+                  exact
+                  activeClassName="router-link-exact-active"
+                >
+                  Landlord Services
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
                   to="/"
                   exact
                   activeClassName="router-link-exact-active"
                 >
-                  Home
+                  Browse Properties
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/TenantPortal"
+                  exact
+                  activeClassName="router-link-exact-active"
+                >
+                  Tenant Portal
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/PayRent"
+                  exact
+                  activeClassName="router-link-exact-active"
+                >
+                  Pay Rent
                 </NavLink>
               </NavItem>
             </Nav>
