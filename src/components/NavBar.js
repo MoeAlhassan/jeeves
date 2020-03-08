@@ -32,7 +32,7 @@ const NavBar = () => {
 
   return (
     <div className="nav-container">
-      <Navbar color="#660000" light expand="md">
+      <Navbar color="#ffffff" light expand="md">
         <Container>
           <NavbarBrand className="logo" />
           <NavbarToggler onClick={toggle} />
