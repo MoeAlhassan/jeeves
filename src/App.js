@@ -29,7 +29,7 @@ const App = () => {
     <Router history={history}>
       <div id="app" className="d-flex flex-column h-100">
         <NavBar />
-        <div className="container-fluid browseProp">
+        <div className="container-fluid">
         <Container className="flex-grow-1 mt-5">
           <Switch>
             <Route path="/" exact component={Home} />
