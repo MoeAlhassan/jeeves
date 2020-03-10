@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Roboto", "Oxygen",
+  font-family: "Avenir Next", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif, -apple-system, BlinkMacSystemFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #0E2721;
@@ -17,31 +17,11 @@ code {
     monospace;
 }
 
-footer{
-  background: #fff;
-  box-shadow: none;
-  text-align: center;
-  min-height: unset ;
-  padding: unset;
-}
-
-.browseProp {
-  display: inline-block;
-  width: 100%;
-  font-size: 0;
-  line-height: 0;
-  vertical-align: middle;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-image: url(https://bourdain-travel-project.s3.amazonaws.com/browse.png);
-  min-height: 90vh;
-}
-
 .navbar {
   background-color: #1C2321;
-  padding: 1.375rem 0;
   box-shadow: 0 1px 2px 0 #dfe3ec;
+  font-family: "Avenir Next";
+  font-weight: 500;
 }
 
  .navbar-light .navbar-nav .nav-link {
@@ -54,31 +34,7 @@ footer{
 .nav-link:hover{
   color:#FCBF49!important;
 }
-.searchButton{
-  background-color: #0E2721;
-  border-radius: 2rem;
-}
-.searchButton:hover{
-  background-color:#FCBF49;
-  border-color: #FCBF49;
-  border-radius: 2rem;
-}
-.buttonSize{
-  margin: 0 auto;
-  border-radius: 2rem;
-}
-::placeholder{
-  text-align: center;
-  color: black;
-}
-.form-control{
-  border-radius: 2rem;
-  border-color: #0E2721;
-  border: .1px;
-  -webkit-box-shadow: 0px 9px 21px -4px rgba(99,99,99,1);
-  -moz-box-shadow: 0px 9px 21px -4px rgba(99,99,99,1);
-  box-shadow: 0px 9px 21px -4px rgba(99,99,99,1);
-}
+
 .serverlesstag{
   margin: auto auto;
 }

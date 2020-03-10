@@ -1,80 +1,110 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   Collapse,
-  Container,
+  //Container,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
+//   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
   Button,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+//   UncontrolledDropdown,
+//   DropdownToggle,
+//   DropdownMenu,
+//   DropdownItem
 } from "reactstrap";
 
-import { useAuth0 } from "../react-auth0-spa";
+//import { useAuth0 } from "../react-auth0-spa";
 
-const NavBar = () => {
+const TenantNav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
+//   const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
   const toggle = () => setIsOpen(!isOpen);
 
-  const logoutWithRedirect = () =>
-    logout({
-      returnTo: window.location.origin
-    });
+//   const logoutWithRedirect = () =>
+//     logout({
+//       returnTo: window.location.origin
+//     });
 
   return (
-    <div className="nav-container">
-      <Navbar color="#ffffff" light expand="md">
-          <NavbarBrand className="logo" />
+      <Navbar className="SubBarParent" color="#ffffff" light expand="md">
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="ml-auto nav-fill w-50" navbar>
+            <Nav className="mr-auto nav-fill w-100 SubBar" navbar>
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/LandlordServices"
+                  to="/TenantPortal/"
                   exact
-                  activeClassName="router-link-exact-active"
+                  activeClassName="router-link-exact-active-sub"
                 >
-                  Landlord Services
+                  Payments
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/"
+                  to="/TenantPortal/Maintenance"
                   exact
-                  activeClassName="router-link-exact-active"
+                  activeClassName="router-link-exact-active-sub"
                 >
-                  Browse Properties
+                  Maintenance
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/TenantPortal"
-                  activeClassName="router-link-exact-active"
+                  to="/TenantPortal/Messages"
+                  exact
+                  activeClassName="router-link-exact-active-sub"
                 >
-                  Tenant Portal
+                  Messages
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
-                  to="/PayRent"
+                  to="/TenantPortal/Applications"
                   exact
-                  activeClassName="router-link-exact-active"
+                  activeClassName="router-link-exact-active-sub"
                 >
-                  Pay Rent
+                  Applications
                 </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/TenantPortal/Documents"
+                  exact
+                  activeClassName="router-link-exact-active-sub"
+                >
+                  Documents
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/TenantPortal/Profile"
+                  exact
+                  activeClassName="router-link-exact-active-sub"
+                  className="subBar-shading"
+                >
+                  Profile
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <Button
+                  tag={RouterNavLink}
+                  to="/TenantPortal/Help"
+                  exact
+                  activeClassName="router-link-exact-active-sub"
+                  className="HelpButton">
+                      Get Help
+                </Button>
               </NavItem>
             </Nav>
             {/* <Nav className="d-none d-md-block" navbar>
@@ -175,8 +205,7 @@ const NavBar = () => {
             )} */}
           </Collapse>
       </Navbar>
-    </div>
   );
 };
 
-export default NavBar;
+export default TenantNav;

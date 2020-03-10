@@ -1,0 +1,78 @@
+.SubBar{
+    background-color: white!important;
+    box-shadow: 0 1px 2px 0 #dfe3ec;
+    font-family: "Avenir Next";
+    font-weight: 500;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.SubBarParent{
+    padding: 0;
+    color: black;
+}
+.router-link-exact-active-sub{
+    color: black!important;
+    border-bottom: none;
+}
+.navbar-light .navbar-nav .subBar-shading .nav-lin{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+}
+.HelpButton{
+    background-color: #FCBF49;
+    border-radius: 2rem;
+    border-color: #FCBF49;
+    font-family: "Avenir Next";
+    font-weight: 500;
+    color: black;
+}
+.BigBox{
+    -webkit-box-shadow: 1px 1px 21px -1px rgba(89,89,89,0.31);
+    -moz-box-shadow: 1px 1px 21px -1px rgba(89,89,89,0.31);
+    box-shadow: 1px 1px 21px -1px rgba(89,89,89,0.31);
+    border-radius: .5rem;
+    min-height: inherit;
+
+}
+.TenantContainer{
+    min-width: 90vw;
+    min-height: 70vh;
+    margin: auto;
+}
+.SmallBoxTop{
+    -webkit-box-shadow: 1px 1px 21px -1px rgba(89,89,89,0.31);
+    -moz-box-shadow: 1px 1px 21px -1px rgba(89,89,89,0.31);
+    box-shadow: 1px 1px 21px -1px rgba(89,89,89,0.31);
+    border-radius: .5rem;
+    min-height: 35vh;
+    margin: auto;
+
+}
+.SmallBoxBottom{
+    -webkit-box-shadow: 1px 1px 21px -1px rgba(89,89,89,0.31);
+    -moz-box-shadow: 1px 1px 21px -1px rgba(89,89,89,0.31);
+    box-shadow: 1px 1px 21px -1px rgba(89,89,89,0.31);
+    border-radius: .5rem;
+    min-height: 35vh;
+    margin: auto;
+
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: inherit;
+}
+.rightside{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    clear: left;
+}
+.col-md-4, .col-md-12, .col-md-7{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin: auto;
+}
