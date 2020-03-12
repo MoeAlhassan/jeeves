@@ -77,7 +77,7 @@ const NavBar = () => {
                 </NavLink>
               </NavItem>
             </Nav>
-            {/* <Nav className="d-none d-md-block" navbar>
+            <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (
                 <NavItem>
                   <Button
@@ -172,7 +172,7 @@ const NavBar = () => {
                   </RouterNavLink>
                 </NavItem>
               </Nav>
-            )} */}
+            )}
           </Collapse>
       </Navbar>
     </div>
